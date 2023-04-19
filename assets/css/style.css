@@ -1,0 +1,23 @@
+header {
+    background-color: #444;
+    color:white;
+  }
+
+#muscle-finder {
+    width: 300px;
+    margin-right:60px;
+  }
+  .row{
+    margin-top:70px ;
+  }
+  
+  .navbar {
+    height: 80px;
+  }
+  
+  .img {
+    width: 50%;
+  }
+  .navbar-dark .navbar-brand {
+    font-size: 40px;
+  }
