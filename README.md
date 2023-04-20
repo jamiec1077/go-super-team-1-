@@ -38,3 +38,8 @@ Create a workout dashboard with form inputs
 GitHubGitHub
 GitHub - jamiec1077/go-super-team-1-: first project to test our skills
 first project to test our skills . Contribute to jamiec1077/go-super-team-1- development by creating an account on GitHub. (42 kB)
+
+
+![Alt text](assets/images/workout___nutrition_dashboard.png)
+
+![alt text](workout___nutrition_dashboard.png)
