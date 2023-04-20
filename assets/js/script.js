@@ -1,4 +1,3 @@
-/*Two api - exercise & nutrition are used */
 /* Declare the varaible*/
 var muscleInputFinder = document.getElementById("muscle-finder");
 const muscleUrl = 'https://api.api-ninjas.com/v1/exercises?muscle=';
@@ -71,29 +70,94 @@ function searchFood() {
       return response.json();
     })
     .then(function (data) {
-      // Do something with the nutrition data, e.g. display it in a div element
       console.log(data);
-      console.log(data[0]);
-      nutritionDiv.innerHTML = JSON.stringify(data);
-
-      const nutritionInfo = `
-              <p>Name: ${data[0].name}</p>
-              <p>Serving size: ${data[0].serving_size_g} g</p>
-              <p>Calories: ${data[0].calories}</p>
-              <p>Total fat: ${data[0].fat_total_g} g</p>
-              <p>Saturated fat: ${data[0].fat_saturated_g} g</p>
-              <p>Cholesterol: ${data[0].cholesterol_mg} mg</p>
-              <p>Sodium: ${data[0].sodium_mg} mg</p>
-              <p>Total carbohydrates: ${data[0].carbohydrates_total_g} g</p>
-              <p>Dietary fiber: ${data[0].fiber_g} g</p>
-              <p>Sugars: ${data[0].sugar_g} g</p>
-              <p>Protein: ${data[0].protein_g} g</p>
-              <p>Potassium: ${data[0].potassium_mg} mg</p>
-            `;
-
-      nutritionDiv.innerHTML = nutritionInfo;
-
+      //display as a chart using library
+      const chartDiv = document.createElement('div');
+      chartDiv.style.width = '500px';
+      chartDiv.style.height = '500px';
+      chartDiv.classList.add('nutritionChartDiv');
+      
+      document.getElementById('nutritionChartDiv').appendChild(chartDiv);
+      
+      const canvas = document.createElement('canvas');
+      canvas.setAttribute('id', 'myChart');
+      canvas.setAttribute('width', '500');
+      canvas.setAttribute('height', '500');
+      
+      chartDiv.appendChild(canvas);
+      
+      new Chart(canvas.getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: [
+            'Total Fat',
+            'Saturated Fat',
+            'Cholesterol',
+            'Sodium',
+            'Total Carbohydrates',
+            'Dietary Fiber',
+            'Sugars',
+            'Protein',
+            'Potassium'
+          ],
+          datasets: [
+            {
+              label: 'Nutrient Values',
+              data: [
+                data[0].fat_total_g,
+                data[0].fat_saturated_g,
+                data[0].cholesterol_mg,
+                data[0].sodium_mg,
+                data[0].carbohydrates_total_g,
+                data[0].fiber_g,
+                data[0].sugar_g,
+                data[0].protein_g,
+                data[0].potassium_mg
+              ],
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)'
+              ],
+      
+              borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+              ],
+      
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+ 
+      
+      
     })
+     
+          
+      
+    
     .catch(function (error) {
       console.error('Error fetching nutrition data:', error);
     });
