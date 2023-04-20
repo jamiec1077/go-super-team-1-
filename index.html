@@ -30,7 +30,7 @@
               </select>
             </div>
             <div class="col-sm-4">
-              <input type="text" class="form-control mr-sm-2" id="food-search" placeholder="Search for food">
+              <input type="text" class="form-control mr-sm-2" id="food-search" placeholder="Find Food Calories">
             </div>
             <div class="col-sm-2">
               <button type="button" class="btn btn-primary" id="search-button">Search</button>
@@ -48,23 +48,6 @@
         <main>
             <section>
              
-               <!--<div class="row">
-                <div class="col-sm-20 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">track your progress here</h5>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Track your progress!!!
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                
-                                </ul>
-                              </div>
-                            </p>
-                           
-                        </div>-->
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <div class="card">
@@ -150,11 +133,21 @@
                     </div>
                 </div>
             </section>
-            <!--api  data-->
-            <div id="output" class="col-md-5" >
-              
+         
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="output">
+                    <!-- exercise content goes here -->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="nutrition">
+                    <!-- nutritions content goes here -->
+                  </div>
+                </div>
+              </div>
             </div>
-            <div id ="nutrition"></div>
             
         </main>
         <script src="./assets/js/script.js"></script>
