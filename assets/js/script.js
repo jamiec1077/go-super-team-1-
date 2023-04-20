@@ -1,3 +1,4 @@
+/*Two api - exercise & nutrition are used */
 /* Declare the varaible*/
 var muscleInputFinder = document.getElementById("muscle-finder");
 const muscleUrl = 'https://api.api-ninjas.com/v1/exercises?muscle=';
@@ -33,7 +34,10 @@ muscleInputFinder.addEventListener('change', function () {
 
         // Create a header element for the exercise name
         var exerciseName = document.createElement("h3");
+       
+        console.log("my data is " + data[i].name);
         exerciseName.textContent = data[i].name;
+
         cardDiv.appendChild(exerciseName);
 
         // Create an element for the exercise image
