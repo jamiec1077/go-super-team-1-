@@ -1,3 +1,5 @@
+
+
 /* Declare the varaible*/
 var muscleInputFinder = document.getElementById("muscle-finder");
 const muscleUrl = 'https://api.api-ninjas.com/v1/exercises?muscle=';
