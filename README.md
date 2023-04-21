@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c
 # go-super-team-1
 
 Amala Hema Francis, Jamie Charlemagne , Edward Kiosa
@@ -7,7 +10,10 @@ Amala Hema Francis, Jamie Charlemagne , Edward Kiosa
 
 # go-super-team-1-
 ## Project Name : Workout & Nutrtion Dashboard
+<<<<<<< HEAD
 
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c
 ## Table of contents
 - Overview
     - User Story
@@ -20,7 +26,10 @@ Amala Hema Francis, Jamie Charlemagne , Edward Kiosa
 ## Overview
 ### User Story
 Create a workout dashboard with form inputs
+<<<<<<< HEAD
 
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c
 
   - The objective is to create a web page using HTML and CSS/Bootstrap to design and structure the layout. Additionally, two APIs will be utilized to retrieve dynamic data which can be manipulated using jQuery and JavaScript to further customize the page. 
 
@@ -57,7 +66,6 @@ Create a workout dashboard with form inputs
 - How to create element dynamically and append to the parent
 - How to clear the data for each fetch
 
-=======
   - The objective is to create a web page using HTML and CSS/Bootstrap to design and structure the layout. Additionally, two APIs will be utilized to retrieve dynamic data which can be manipulated using jQuery and JavaScript to further customize the page.
   - When selecting a muscle in the workout options select menu,
   - Then related exercise names from the exercise API will be displayed in a separate div.
@@ -89,4 +97,7 @@ first project to test our skills . Contribute to jamiec1077/go-super-team-1- dev
 ![Alt text](assets/images/workout___nutrition_dashboard.png)
 
 ![alt text](workout___nutrition_dashboard.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c
