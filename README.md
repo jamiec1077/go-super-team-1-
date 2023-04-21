@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c
 # go-super-team-1
 
 Amala Hema Francis, Jamie Charlemagne , Edward Kiosa
@@ -6,6 +10,10 @@ Amala Hema Francis, Jamie Charlemagne , Edward Kiosa
 
 # go-super-team-1-
 ## Project Name : Workout & Nutrtion Dashboard
+<<<<<<< HEAD
+
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c
 ## Table of contents
 - Overview
     - User Story
@@ -18,6 +26,10 @@ Amala Hema Francis, Jamie Charlemagne , Edward Kiosa
 ## Overview
 ### User Story
 Create a workout dashboard with form inputs
+<<<<<<< HEAD
+
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c
 
   - The objective is to create a web page using HTML and CSS/Bootstrap to design and structure the layout. Additionally, two APIs will be utilized to retrieve dynamic data which can be manipulated using jQuery and JavaScript to further customize the page. 
 
@@ -34,7 +46,7 @@ Create a workout dashboard with form inputs
  
   ![The following image shows the web application's appearance and functionality:
   The workout app incluse search exercise name and find the nutrition of the food.]
-  ![alt text](./assets/images/workout%20%26%20nutrition%20dashboard.PNG)
+  ![alt text](./assets/images/Final%20workoutdashboard.PNG)
   
   ### Links
    Github url https://github.com/jamiec1077/go-super-team-1-
@@ -85,3 +97,7 @@ first project to test our skills . Contribute to jamiec1077/go-super-team-1- dev
 ![Alt text](assets/images/workout___nutrition_dashboard.png)
 
 ![alt text](workout___nutrition_dashboard.png)
+<<<<<<< HEAD
+
+=======
+>>>>>>> ae9f58fe649eaffe6f83a8a586a7b6f6abe9e14c

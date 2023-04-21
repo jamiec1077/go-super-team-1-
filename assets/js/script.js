@@ -5,7 +5,7 @@ const muscleUrl = 'https://api.api-ninjas.com/v1/exercises?muscle=';
 var muscle = ''; // empty muscle string
 
 
-/**get the exercise name from exercise api* */
+/**get the exercise name from exercise api* https://api-ninjas.com/api */
 muscleInputFinder.addEventListener('change', function () {
   muscle = muscleInputFinder.value; // update muscle string when user selects an option
   const url = muscleUrl + muscle;
@@ -59,9 +59,17 @@ const nutritionDiv = document.getElementById("nutrition");
 
 /*create function */
 function searchFood() {
+  
+
   food = foodInput.value;
   const url = `https://api.api-ninjas.com/v1/nutrition?query=${food}`;
   console.log("nutrition link is " + url)
+  // clear chart div before making API call
+   // Clear chart container before appending new chart
+  const chartDiv = document.getElementById('nutritionChartDiv');
+  chartDiv.innerHTML = '';
+
+  
   fetch(url, {
     headers: {
       'X-Api-Key': 'UmNZAX6e1hikqDIu1+4duQ==iSisMXMwBdRo7BpX'
@@ -72,6 +80,7 @@ function searchFood() {
     })
     .then(function (data) {
       console.log(data);
+      
       //display as a chart using library
       const chartDiv = document.createElement('div');
       chartDiv.style.width = '500px';
@@ -79,7 +88,6 @@ function searchFood() {
       chartDiv.classList.add('nutritionChartDiv');
       
       document.getElementById('nutritionChartDiv').appendChild(chartDiv);
-      
       const canvas = document.createElement('canvas');
       canvas.setAttribute('id', 'myChart');
       canvas.setAttribute('width', '500');
@@ -151,7 +159,7 @@ function searchFood() {
           }
         }
       });
- 
+     
       
       
     })
