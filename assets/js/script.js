@@ -151,6 +151,7 @@ function searchFood() {
             }
           ]
         },
+        
         options: {
           scales: {
             y: {
