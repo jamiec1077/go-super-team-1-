@@ -1,6 +1,6 @@
-header {
-    background-color: #444;
-    color:white;
+head {
+    background-color: #5b9fd3;
+    color:rgb(255, 255, 255);
   }
 
 #muscle-finder {
@@ -12,7 +12,7 @@ header {
   }
   
   .navbar {
-    height: 80px;
+    height: 75px;
   }
   
   .img {
@@ -26,11 +26,11 @@ header {
     flex-direction: column;
   }
   .card {
-    background-color: #fff;
+    background-color: black;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(120, 39, 39, 0.1);
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
   }
@@ -56,3 +56,4 @@ header {
   position: fixed;
   bottom: 0;
 }
+
