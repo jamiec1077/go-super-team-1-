@@ -1,6 +1,6 @@
-header {
-    background-color: #ec0909;
-    color:white;
+head {
+    background-color: #5b9fd3;
+    color:rgb(255, 255, 255);
   }
 
 #muscle-finder {
@@ -26,9 +26,9 @@ header {
     flex-direction: column;
   }
   .card {
-    background-color: #6d1515;
+    background-color: black;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(120, 39, 39, 0.1);
     padding: 10px;
     margin-bottom: 25px;
     display: flex;
@@ -56,3 +56,4 @@ header {
   position: fixed;
   bottom: 0;
 }
+
